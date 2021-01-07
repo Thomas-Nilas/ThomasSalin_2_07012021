@@ -3,6 +3,7 @@
                 <head>
                     <meta charset="UTF-8"/>
                     <link rel="stylesheet" href="styleP2.css"/>
+                    <script src="https://kit.fontawesome.com/329276ad25.js" crossorigin="anonymous"></script>
                     <title>Reservia : Trouvez votre hebergement</title>
                 </head>
 
@@ -24,17 +25,33 @@
 
                                         <main>
                                                 <section id="Recherche">
+
                                                     <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
                                                     <p>En plein centre ville ou pleine nature</p>
 
-                                                    <div id="inputrecherche">
-                                                        <form method="post" action="traitement.php">
-                                                            <p>
-                                                                <label><img src="images/map-marker-alt-solid.svg" alt="logodestination"/></label> : <input type="text" name="destination"/>
-                                                            </p>
-                                                        </form>
+                                                    <form method="post" action="traitement.php">
+                                                        <p>
+                                                            <label for="destination"><i class="fas fa-map-marker-alt"></i></label>
+                                                            <input type="search" name="destination" placeholder="Marseille,France" id="destination"/><label for="destination"><input id="boutondestination" type="submit"/></label>
+                                                        </p>
+                                                    </form>
+                                                    
+                                                    <div id="filtre">
+                                                        <h3>Filtres</h3>
+                                                        <ul>
+                                                            <li>Economique</li>
+                                                            <li>Familial</li>
+                                                            <li>Romantique</li>
+                                                            <li>Animaux autorisés</li>
+                                                         </ul>
+                                                    </div>
+
+                                                    <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 
                                                     </div>
+                                                
+
+                                                    
 
                                                </section>
 
