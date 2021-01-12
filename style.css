@@ -4,13 +4,14 @@
           url("police/Raleway-Italic-VariableFont_wght.ttf") (format:"truetype");
 }
 
-#page_entiere{
+body{
     font-family: "Raleway", Arial, Verdana, sans-sérif;
 }
 
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul{
