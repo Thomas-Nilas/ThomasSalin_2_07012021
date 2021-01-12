@@ -1,3 +1,50 @@
+@font-face{
+    font-family: "Raleway";
+    src: url("police/Raleway-VariableFont_wght.ttf") (format:"truetype"),
+          url("police/Raleway-Italic-VariableFont_wght.ttf") (format:"truetype");
+}
+
+#page_entiere{
+    font-family: "Raleway", Arial, Verdana, sans-sérif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav li{
+    margin-right: 60px;
+}
+
+header p{
+    font-weight: bold;
+}
+
+#logoreservia img{
+    height: 40px;
+}
+
+#navigation{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+h6{
+    opacity: 0;
+}
 a .fullclick {
     display: block;
 }
