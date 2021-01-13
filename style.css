@@ -6,29 +6,55 @@
 
 body{
     font-family: "Raleway", Arial, Verdana, sans-sérif;
+    margin: auto;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0% 2%;
+    font-size: 1em;
+}
+
+header nav{
+    display: block;
+    margin: 0;
 }
 
 header nav ul{
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 header nav li{
+    display: block;
     margin-right: 60px;
+    padding: 10% 0;
+}
+
+nav li:hover{
+    border-top: solid 1px #0065FC;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #0065FC;
 }
 
 header p{
     font-weight: bold;
+    color: #0065FC;
 }
 
 #logoreservia img{
-    height: 40px;
+    height: 50px;
 }
 
 #navigation{
@@ -36,16 +62,12 @@ header p{
     align-items: center;
 }
 
-
-
-
-
-
-
-
-h6{
-    opacity: 0;
+footer{
+    display: flex;
+    background-color:#f2f2f2;
 }
+}
+
 a .fullclick {
     display: block;
 }
