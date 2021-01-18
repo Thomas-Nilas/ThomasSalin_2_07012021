@@ -17,6 +17,7 @@ header{
     align-items: center;
     padding: 0% 2%;
     font-size: 0.8em;
+    margin-bottom: 30px;
 }
 
 header nav{
@@ -71,6 +72,11 @@ main{
 
 main p{
     font-size: 1em;
+    margin-top: 0;
+}
+
+main h3{
+    margin: 0;
 }
 
 main a{
@@ -95,7 +101,6 @@ input:focus{
 
 #recherche{
     margin-bottom: 40px;
-    line-height: 10px;
 }
 
 .fa-map-marker-alt{
@@ -240,21 +245,27 @@ input:focus{
     background-color: white;
     width: 30%;
     height: 200px;
-    padding: 5px 5px 10px 5px;
-
+    padding: 5px;
 }
 
 .texteart{
-    width: 100%;
-    line-height: 5px;
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .imgheber{
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 115px;
-    position: relative;
+}
+
+#plus{
+    font-weight: bold;
+    margin-top: 30px;
 }
 
 #populaire{
@@ -263,11 +274,13 @@ input:focus{
     padding: 2%;
     width: 30%;
     height: 625px;
+
 }
 
 #boxtitrepopulaire{
     display: flex;
     align-items: baseline;
+    width: 98%;
     justify-content: space-between;
 }
 
@@ -275,31 +288,32 @@ input:focus{
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px 0px 5px 5px;
     background-color: white; 
-    width: 100%;
-    height: 130px;
+    width: 98%;
+    height: 145px;
     align-items: center;
-    
+    margin-bottom: 30px;
 }
 
 .articletexte{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 66%;
+    width: 60%;
     height: 130px;
-    padding: 0px 10px 10px 10px;
-    line-height: 10px;
     margin: 10px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 .imagepop{
     width: 33%;
-    height: 130px;
-    border-radius: 15px 0px 0px 15px;
-    
-    
+    height: 145px;
+    border-radius: 15px 0px 0px 15px; 
 }
+
 .note{
     display: flex;
 }
