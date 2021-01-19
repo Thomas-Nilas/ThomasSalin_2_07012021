@@ -272,7 +272,6 @@ input:focus{
     padding: 2%;
     width: 30%;
     height: 625px;
-
 }
 
 #boxtitrepopulaire{
@@ -327,12 +326,11 @@ input:focus{
     padding: 15px;
 }
 
-.artlong{
+.articlelong{
     border-radius: 15px;
     box-shadow: 0 0 30px #f2f2f2;
     height: 445px;
-    width: 22.5%;
-    
+    width: 22.5%;   
 }
 
 .boxarticledouble{
@@ -371,36 +369,35 @@ input:focus{
     height: 210px;
 }
 
-.photolong{
+.photoarticlelong{
     border-radius: 15px 15px 0px 0px;
     height: 390px;
     width: 100%;
 }
 
-.fortdepomegues{
+.photoarticledouble1{
     border-radius: 15px 15px 0px 0px;
     height: 180px;
     width: 100%;
 }
 
-.ilesdufrioul{
+.photoarticledouble2{
     border-radius: 15px 15px 0px 0px;
     height: 110px;
     width: 100%;
 }
 
-.notredame{
+.photoarticledouble3{
     border-radius: 15px 15px 0px 0px;
     height: 140px;
     width: 100%;
 }
 
-.longchamps{
+.photoarticledouble4{
     border-radius: 15px 15px 0px 0px;
     height: 150px;
     width: 100%;
 }
-
 
 .note{
     display: flex;
@@ -420,6 +417,26 @@ footer{
     width: 100%;
 }
 
+footer article{
+    width: 33%;
+    padding: 1% 2%;
+    text-align: start;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0%;
+    line-height: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer h3{
+    font-weight: bold;
+}
 
 a .fullclick {
     display: block;
