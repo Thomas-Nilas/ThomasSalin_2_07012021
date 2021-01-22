@@ -1,7 +1,6 @@
 header{
     display: flex;
     flex-wrap: wrap;
-    white-space: nowrap;
     justify-content: space-between;
     width: auto;
 }
