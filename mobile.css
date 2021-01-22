@@ -1,8 +1,14 @@
 header{
     display: flex;
     flex-wrap: wrap;
+    white-space: nowrap;
     justify-content: space-between;
     width: auto;
+}
+
+header div:nth-child(1){
+    width: 50%;
+    padding: 0% 2%
 }
 
 header nav {
@@ -35,5 +41,6 @@ header div:nth-child(2){
     margin-right: 0;
     text-decoration: none;
 }
+
 
 

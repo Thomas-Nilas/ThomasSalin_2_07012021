@@ -27,6 +27,15 @@ header div:nth-child(1){
     padding: 0% 2%
 }
 
+@media (max-width: 768px){
+    header div:nth-child(1){
+        width: 25%;
+    }  
+    header div:nth-child(3){
+        width: 25%;
+    }
+}
+
 header div:nth-child(3){
     padding-right: 2%;
 }
@@ -71,6 +80,7 @@ header p{
 
 #logoreservia img{
     height: 50px;
+    width: 100px;
 }
 
 #navigation{
@@ -131,6 +141,21 @@ input:focus{
     border: solid 1px #f2f2f2;
 }
 
+@media (max-width: 768px){
+    #destination{
+        border: none;
+        border-top: solid 1px #f2f2f2;
+        border-bottom: solid 1px #f2f2f2;
+    }
+
+    #bouton{
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
+    border-radius: 0px 15px 15px 0px;
+    height: 48px;
+    }
+}
+
 #boutondestination{
     background-color: #0065FC;
     color: white;
@@ -138,6 +163,19 @@ input:focus{
     border-radius: 0 15px 15px 0;
     height: 50px;
     width: 135px;
+}
+
+@media (max-width: 768px) {
+    #boutondestination{
+        background-color: #0065FC;
+        height: 48px;
+        width: 50px;
+        font-size: 0;
+        background-image: url(images/logo/search-solid.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
 }
 
 #filtre{
