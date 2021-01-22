@@ -16,12 +16,21 @@ a .fullclick {
 
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0% 2%;
+    padding: 0% 0%;
     font-size: 1em;
     margin-bottom: 30px;
 }
+
+header div:nth-child(1){
+    width: 75%;
+    padding: 0% 2%
+}
+
+header div:nth-child(3){
+    padding-right: 2%;
+}
+   
 
 header nav{
     display: block;
@@ -41,7 +50,7 @@ header nav li{
     padding: 10% 0;
 }
 
-nav li:hover{
+header nav li:hover{
     border-top: solid 1px #0065FC;
 }
 
@@ -52,6 +61,7 @@ header a{
 
 nav a:hover{
     color: #0065FC;
+    
 }
 
 header p{
