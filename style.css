@@ -20,7 +20,6 @@ header{
     display: flex;
     align-items: center;
     padding: 0% 0%;
-    font-size: 1em;
     margin-bottom: 30px;
 }
 
@@ -33,7 +32,8 @@ header div:nth-child(3){
     padding-right: 2%;
 }
 
-@media screen and (max-width: 768px){
+
+@media all and (max-width: 768px){
     header div:nth-child(1){
         width: 25%;
         text-align: center;
@@ -95,7 +95,8 @@ main{
     padding: 0 2%;
 }
 
-@media (max-width: 768px){
+
+@media all and (max-width: 768px){
     main{
         padding: 0;
         margin: 0;
@@ -103,8 +104,12 @@ main{
 }
 
 main p{
-    font-size: 1em;
     margin-top: 2px;
+    border: solid 1px blue;
+}
+
+main h1{
+    margin: 0;
 }
 
 main h3{
@@ -136,7 +141,7 @@ input:focus{
     margin-bottom: 40px;
 }
 
-@media (max-width: 768px){
+@media all and (max-width: 768px){
     #recherche{
         padding-left: 2%;
     }
@@ -363,13 +368,13 @@ input:focus{
 }
 
 .texteart{
-    display: flex;
-    flex-direction: column;
     padding-left: 10px;
+    padding-bottom: 10px;
     margin-top: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-   
+    border: solid 1px green;
+    width: 100%;
+    font-size: 0.8em;
+
 }
 
 .imgheber{
@@ -436,8 +441,8 @@ input:focus{
     height: 130px;
     margin: 10px;
     padding-bottom: 5px;
-    white-space: nowrap;
-    overflow: hidden;
+    font-size: 0.8em;
+    
 }
 
 .imagepop{
@@ -477,14 +482,10 @@ input:focus{
 }
 
 .texteactivite{
-    padding: 15px;
-    
+    padding: 15px; 
+    font-size: 0.8em;
 }
 
-.texteactivite h3{
-    white-space: nowrap;
-    overflow: hidden
-}
 
 .articlelong{
     border-radius: 15px;
@@ -635,6 +636,8 @@ input:focus{
 
 .note{
     display: flex;
+    font-size: 0.8em;
+    border: solid 1px black;
 }
 
 .ok{
@@ -649,6 +652,7 @@ footer{
     display: flex;
     background-color: #f2f2f2;
     width: 100%;
+    font-size: 0.8em;
 }
 
 footer article{
@@ -656,8 +660,7 @@ footer article{
     padding: 1% 2%;
 }
 
-
-@media (max-width: 768px){
+@media all and (max-width: 768px){
     footer{
         flex-direction: column; 
         border: solid 1px red;
@@ -684,4 +687,5 @@ footer a{
 footer h3{
     font-weight: bold;
 }
+
 
