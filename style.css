@@ -7,46 +7,79 @@
 body{
     font-family: "Raleway", Arial, Verdana, sans-sérif;
     margin: auto;
-    padding: 0;
-    border: solid 2px blue;
+
+}
+/*carte entièrement cliquable*/
+body a .fullclick {
+    display: block;
 }
 
-
-a .fullclick {
-    display: block;
+body a{
+    text-decoration: none;
+    color: black;
 }
 
 header{
     display: flex;
     align-items: center;
-    padding: 0% 0%;
     margin-bottom: 30px;
 }
 
-header div:nth-child(1){
-    width: 75%;
-    padding: 0% 2%
+@media all and (max-width: 768px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: auto;
+    }
 }
 
+/*div correspondant au logo Reservia*/
+header div:nth-child(1){
+    width: 75%;
+    padding: 0% 2%;
+}
+
+/*div correspondant à "s'inscrire"*/
 header div:nth-child(3){
     padding-right: 2%;
 }
-
 
 @media all and (max-width: 768px){
     header div:nth-child(1){
         width: 25%;
         text-align: center;
+        padding: 0% 2%
     }  
+
+    /*div correspondant au menu <nav>*/
+    header div:nth-child(2){
+        order: 3;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;   
+    }
+    
     header div:nth-child(3){
         width: 25%;
         text-align: center;
+    }
+
+    header div{
+        padding: 2%;
     }
 }
  
 header nav{
     display: block;
     margin: 0;
+}
+
+@media all and (max-width: 768px){
+    header nav {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 header nav ul{
@@ -59,21 +92,30 @@ header nav ul{
 header nav li{
     display: block;
     margin-right: 60px;
-    padding: 10% 0;
+    padding: 50px 0;
 }
 
 header nav li:hover{
     border-top: solid 1px #0065FC;
 }
 
-header a{
-    text-decoration: none;
-    color: black;
+@media all and (max-width: 768px){
+    #navigation li{
+        border-bottom: solid 3px #f2f2f2;
+        width: 50%;
+        text-align: center;
+        padding: 0px 0px 10px 0px;
+        margin-right: 0;
+    }
+
+    #navigation li:hover{
+        border-bottom: solid 3px #0065FC;
+        border-top: none;
+    }
 }
 
 nav a:hover{
     color: #0065FC;
-    
 }
 
 header p{
@@ -86,6 +128,7 @@ header p{
     width: 100px;
 }
 
+/* menu <nav>*/
 #navigation{
     display: flex;
     align-items: center;
@@ -94,7 +137,6 @@ header p{
 main{
     padding: 0 2%;
 }
-
 
 @media all and (max-width: 768px){
     main{
@@ -105,7 +147,6 @@ main{
 
 main p{
     margin-top: 2px;
-    border: solid 1px blue;
 }
 
 main h1{
@@ -116,37 +157,37 @@ main h3{
     margin: 0;
 }
 
-main a{
-    text-decoration: none;
-    color: black;
-}
-
 form{
     display: flex;
     align-self: center;
-    white-space: nowrap;
-    border: solid 2px black; 
+    white-space: nowrap; 
+    width: 100%;
 }
 
 input{
     padding-left: 10px;
     border: white;
+    width: 40%;
 }
 
 input:focus{
     outline: none;
 }
 
+
 #recherche{
     margin-bottom: 40px;
+    width: 98%;
 }
 
 @media all and (max-width: 768px){
     #recherche{
-        padding-left: 2%;
+        padding-left: 4%;
+        width: 96%;
     }
 }
 
+/*logo "point de destination*/
 .fa-map-marker-alt{
     font-size: 1.1em;
     text-align: center;
@@ -157,6 +198,7 @@ input:focus{
     padding: 15px;
 } 
 
+/*Champs de recherche*/
 #destination{
     height: 50px;
     border: solid 1px #f2f2f2;
@@ -173,7 +215,6 @@ input:focus{
 
 @media all and (max-width: 768px){
     #boutondestination{
-        background-color: #0065FC;
         height: 50px;
         max-width: 50px;
         min-width: 50px;
@@ -182,21 +223,26 @@ input:focus{
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 15px;
-        margin-left: -10px;
+        margin-left: -16px;
     }
 }
 
 #filtre{
     display: flex;
     align-items: center;
+    width: 100%;
     margin-top: 20px;
 }
 
+
 #filtre ul{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 948px){
     #filtre{
         flex-wrap: wrap; 
     }
@@ -205,7 +251,6 @@ input:focus{
         flex-wrap: wrap;
         padding: 0;
     }
-
 }
 
 #filtre li{
@@ -222,9 +267,10 @@ input:focus{
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
+    
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 948px){
     #filtre li{
         margin-bottom: 25px;
     }
@@ -234,6 +280,7 @@ input:focus{
     background-color: #DEEBFF;
 }
 
+/* puce pour le filtre "économique"*/
 .fa-money-bill-wave{
     background-color:#DEEBFF;
     color: #0065FC;
@@ -245,6 +292,7 @@ input:focus{
     margin-bottom: 0;
 }
 
+/* puce pour le filtre "familial"*/
 .fa-child{
     background-color:#DEEBFF;
     color: #0065FC;
@@ -256,6 +304,7 @@ input:focus{
     margin-bottom: 0;
 }
 
+/* puce pour le filtre "romantique"*/
 .fa-heart{
     background-color:#DEEBFF;
     color: #0065FC;
@@ -267,6 +316,7 @@ input:focus{
     margin-bottom: 0;
 }
 
+/* puce pour le filtre "animaux autorisés"*/
 .fa-dog{
     background-color:#DEEBFF;
     color: #0065FC;
@@ -278,7 +328,7 @@ input:focus{
     margin-bottom: 0;
 }
 
-
+/* puce pour information "plus de 500"*/
 .fa-info-circle{
     border: solid 1px #f2f2f2;
     border-radius: 50%;
@@ -289,16 +339,7 @@ input:focus{
     margin-right: 10px;
 }
 
-#filtre ul.fa{
-    background-color:#DEEBFF;
-    border-radius: 50%;
-    padding : 15px;
-    margin-left: 0;
-    margin-right: 15px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
+/*flexbox correspondant à "l'hébergement" et "les plus populaires"*/
 #boxgenerale{
     display: flex;
     justify-content: space-between;
@@ -314,6 +355,7 @@ input:focus{
     }
 }
 
+/* section "hebergements"*/
 #hebergements{
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -330,10 +372,10 @@ input:focus{
     padding: 4%;
     height: auto;
     align-content: center;
-    border: solid 1px black;
     }
 }
 
+/*Contenants parents des 6 articles "hebergements"*/
 .boxhebergement{
     display: flex;
     justify-content: space-between;
@@ -346,7 +388,6 @@ input:focus{
         align-items: center;
         width: 100%;
         padding: 0;
-        border: solid 1px green;
         margin: 0;
     }
 }
@@ -361,28 +402,29 @@ input:focus{
 
 @media all and (max-width: 768px){
     .boxhebergement article{
-        width: 96%;
+        width: 100%;
         box-shadow: 0 0 30px #f2f2f2;
         margin-bottom: 30px;
     }
 }
 
+/*texte correspondant au article "hebergements"*/
 .texteart{
-    padding-left: 10px;
+    padding-left: 5px;
     padding-bottom: 10px;
     margin-top: 2px;
-    border: solid 1px green;
-    width: 100%;
+    width: 96%;
     font-size: 0.8em;
-
 }
 
+/*image correspondant au article "hebergements"*/
 .imgheber{
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 115px;
 }
 
+/*"Afficher plus"*/
 #plus{
     font-weight: bold;
     margin-top: 30px;
@@ -394,6 +436,7 @@ input:focus{
     }
 }
 
+/* section "les plus populaires"*/
 #populaire{
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -409,10 +452,10 @@ input:focus{
         height: auto;
         border-radius: 0px;
         align-items: center;
-        border: solid 1px red;
     }
 }
 
+/*titre "les plus populaires"*/
 #boxtitrepopulaire{
     display: flex;
     align-items: baseline;
@@ -420,19 +463,20 @@ input:focus{
     justify-content: space-between;
 }
 
+/*Contenants parents des articles*/
 .boxartpop{
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px;
     background-color: white; 
     width: 96%;
     height: 145px;
     align-items: center;
     margin-bottom: 30px;
-    border: solid 1px red;
 }
 
+/*texte correspondant au article "les plus populaires"*/
 .articletexte{
     display: flex;
     flex-direction: column;
@@ -445,16 +489,17 @@ input:focus{
     
 }
 
+/*image correspondant au article "les plus populaires"*/
 .imagepop{
     width: 33%;
     height: 145px;
     border-radius: 15px 0px 0px 15px; 
 }
 
+/* section "Activités"*/
 #activites{
     height: 625px;
     padding-top: 2%;
-    border: solid 1px black;
 }
 
 @media all and (max-width: 768px){
@@ -464,7 +509,7 @@ input:focus{
     }
 }
 
-
+/*Contenants parents des 6 articles "activités"*/
 #boxactivite{
     display: flex;
     justify-content: space-between;
@@ -477,7 +522,6 @@ input:focus{
         align-items: center;
         height: auto;
         width: 100%;
-        border: solid 2px black;
     }
 }
 
@@ -486,13 +530,11 @@ input:focus{
     font-size: 0.8em;
 }
 
-
 .articlelong{
     border-radius: 15px;
     box-shadow: 0 0 30px #f2f2f2;
     height: 445px;
     width: 22.5%; 
-
 }
 
 @media all and (max-width: 768px){
@@ -500,10 +542,10 @@ input:focus{
         width: 98%;
         height: 190px;
         margin-bottom: 20px;
-        border: solid 2px green;
     }
 }
 
+/*Contenants parents des 2 articlesdouble "activités"*/
 .boxarticledouble{
     display: flex;
     flex-direction: column;
@@ -519,6 +561,7 @@ input:focus{
     }
 }
 
+/*article "Fort de pomegues"*/
 #articledouble1{
     border-radius: 15px;
     box-shadow: 0 0 30px #f2f2f2;
@@ -527,6 +570,7 @@ input:focus{
 }
 
 
+/*article "iles du frioul"*/
 #articledouble2{
     border-radius: 15px;
     box-shadow: 0 0 30px #f2f2f2;
@@ -534,6 +578,7 @@ input:focus{
     height: 165px;
 }
 
+/*article "notre de dame"*/
 #articledouble3{
     border-radius: 15px;
     box-shadow: 0 0 30px #f2f2f2;
@@ -541,6 +586,7 @@ input:focus{
     height: 195px;
 }
 
+/*article " Parc longchamps"*/
 #articledouble4{
     border-radius: 15px;
     box-shadow: 0 0 30px #f2f2f2;
@@ -583,24 +629,28 @@ input:focus{
     }
 }
 
+/*photo "Fort de pomegues"*/
 .photoarticledouble1{
     border-radius: 15px 15px 0px 0px;
     height: 180px;
     width: 100%;
 }
 
+/*photo "iles du frioul"*/
 .photoarticledouble2{
     border-radius: 15px 15px 0px 0px;
     height: 110px;
     width: 100%;
 }
 
+/*photo "notre de dame"*/
 .photoarticledouble3{
     border-radius: 15px 15px 0px 0px;
     height: 140px;
     width: 100%;
 }
 
+/*photo "Parc longchamps"*/
 .photoarticledouble4{
     border-radius: 15px 15px 0px 0px;
     height: 150px;
@@ -634,16 +684,18 @@ input:focus{
 
 }
 
+/*Contenants parents des 5 étoiles*/
 .note{
     display: flex;
     font-size: 0.8em;
-    border: solid 1px black;
 }
 
+/*Etoile bleu*/
 .ok{
     color: #0065FC;
 }
 
+/*Etoile grise*/
 .none{
     opacity: 20%;
 }
@@ -663,13 +715,11 @@ footer article{
 @media all and (max-width: 768px){
     footer{
         flex-direction: column; 
-        border: solid 1px red;
     }
     
     footer article{
         width: 94%;
         padding-left: 4%;
-        border: solid 1px black;
     }
 }
 
@@ -677,11 +727,6 @@ footer ul{
     list-style: none;
     padding: 0%;
     line-height: 30px;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
 }
 
 footer h3{
