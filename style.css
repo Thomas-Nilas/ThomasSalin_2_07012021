@@ -150,7 +150,7 @@ main p{
 }
 
 main h1{
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 main h3{
@@ -167,8 +167,9 @@ form{
 input{
     padding-left: 10px;
     border: white;
-    width: 40%;
+    width: 20%;
 }
+
 
 input:focus{
     outline: none;
@@ -183,7 +184,8 @@ input:focus{
 @media all and (max-width: 768px){
     #recherche{
         padding-left: 4%;
-        width: 96%;
+        padding-right: 4%;
+        width: 92%;
     }
 }
 
@@ -202,6 +204,12 @@ input:focus{
 #destination{
     height: 50px;
     border: solid 1px #f2f2f2;
+}
+
+@media all and (max-width: 768px){
+    #destination{
+       width: 70%;
+    }
 }
 
 #boutondestination{
@@ -225,6 +233,11 @@ input:focus{
         border-radius: 15px;
         margin-left: -16px;
     }
+}
+
+strong{
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 #filtre{
@@ -398,6 +411,7 @@ input:focus{
     width: 30%;
     height: 200px;
     padding: 5px;
+    position: relative;
 }
 
 @media all and (max-width: 768px){
@@ -442,7 +456,7 @@ input:focus{
     border-radius: 15px;
     padding: 2%;
     width: 30%;
-    height: 625px;
+    align-items: center;
 }
 
 @media all and (max-width: 768px){
@@ -451,7 +465,6 @@ input:focus{
         padding: 4%;
         height: auto;
         border-radius: 0px;
-        align-items: center;
     }
 }
 
@@ -463,6 +476,14 @@ input:focus{
     justify-content: space-between;
 }
 
+#boxpopulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
 /*Contenants parents des articles*/
 .boxartpop{
     display: flex;
@@ -471,9 +492,9 @@ input:focus{
     padding: 5px;
     background-color: white; 
     width: 96%;
-    height: 145px;
-    align-items: center;
     margin-bottom: 30px;
+    position: relative;
+    
 }
 
 /*texte correspondant au article "les plus populaires"*/
@@ -482,17 +503,14 @@ input:focus{
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    height: 130px;
     margin: 10px;
     padding-bottom: 5px;
     font-size: 0.8em;
-    
 }
 
 /*image correspondant au article "les plus populaires"*/
 .imagepop{
     width: 33%;
-    height: 145px;
     border-radius: 15px 0px 0px 15px; 
 }
 
@@ -688,6 +706,8 @@ input:focus{
 .note{
     display: flex;
     font-size: 0.8em;
+    position: absolute;
+    bottom: 10px;
 }
 
 /*Etoile bleu*/
